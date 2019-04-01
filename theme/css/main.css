@@ -1,0 +1,280 @@
+@import url("reset.css");
+@import url(http://fonts.googleapis.com/css?family=Actor);
+@import url(http://fonts.googleapis.com/css?family=Ruda);
+@import url(http://fonts.googleapis.com/css?family=Marck+Script);
+
+/* Fix the problem with the em */
+
+body {
+    font-family: 'Actor', sans-serif;
+    font-size: 1.111em;
+    background: #fafafa;
+}
+
+/* header style*/
+header {
+    padding: 2% 23%;
+    overflow: auto;
+}
+
+header nav {
+    font-size: 0.999em;
+    line-height: 30px;
+    text-align: center;
+    float: right;
+    color: #767676;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav li {
+    float: right;
+    display: inline-block;
+    position: relative;
+}
+
+header nav a:link, header nav a:visited {
+    display: inline-block;
+    height: 30px;
+    padding: 5px 1.5em;
+    text-decoration: none;
+    font-size: 0.777em;
+}
+
+header a:link, header a:visited {
+    padding: 2% 10%;
+    color: #767676;
+}
+
+table { width: 100%; }
+
+thead tr th {
+    text-align: center;
+    padding: 0 0 1.666em 0;
+}
+
+.sitename h1 a {
+    font-family: 'Ruda', sans-serif;
+    font-size: 1.777em;
+    color: #767676;
+    text-decoration: none;
+}
+
+.sitename h1 {
+    text-align: center;
+}
+
+.sitename strong {
+    font-family: 'Ruda', sans-serif;
+    font-size: 1.1em;
+}
+
+.sitesubtitle {
+    font-family: 'Ruda', sans-serif;
+    font-size: 0.888em;
+    text-align: center;
+    padding: 1%;
+    color: #767676;
+}
+
+/* article */
+#archives, article {
+    padding: 3% 23%;
+    font-family: 'Actor', sans-serif;
+}
+
+.archives-title, .entry-title {
+    margin: 0 0 1.444em 0;
+}
+
+#archives div.title, article div.entry-title h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+article div.entry-title div#date {
+    margin: 0.5em 0 0 0;
+    text-align: center;
+}
+
+pre {
+    background-color: rgb(238, 238, 238);
+    margin: 1.5em 0em;
+    padding: 1.5em;
+}
+
+/* section */
+section {
+    padding: 3% 23%;
+}
+
+h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+    display: block;
+    content: " ";
+    height: 60px;
+    margin-top: -60px;
+    visibility: hidden;
+}
+
+#content p {
+    font-family: 'Actor', sans-serif;
+    margin: 1.25em 0em;
+    text-align: justify;
+}
+
+#content h2 {
+    font-size: 1.444em;
+    margin: 1.25em 0%;
+}
+
+#content h3 {
+    font-size: 1.333em;
+    margin: 1.25em 0%;
+}
+
+#content h4 {
+    font-size: 1.111em;
+    margin: 1.25em 0%;
+}
+
+/* archives */
+#archives .posts .post {
+    margin-bottom: 1.2em;
+}
+
+/* Lists */
+ul {
+    list-style: outside disc;
+    margin: 0em 0 0 1.5em;
+}
+
+ol {
+    list-style: outside decimal;
+    margin: 0em 0 0 1.5em;
+}
+
+li {
+    margin-top: 0.5em;
+}
+
+/* footer style*/
+.bottom {
+    color: #767676;
+    font-size: 0.8em;
+    padding: 4em 0;
+    text-align: center;
+}
+
+/* links */
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+}
+
+/* -[ Style of section: archives ]- */
+
+.overview {
+    clear: both;
+    padding: 0.555em 0;
+    width: 100%;
+}
+
+.overview .abstract {
+    padding: 0.333em 0 0 0;
+    font-size: 0.9em;
+}
+
+/* paragraphs */
+p {
+    line-height: 1.429em;
+}
+
+/* media query */
+@media all and (max-width: 767px),
+screen and (-webkit-min-device-pixel-ratio: 3.0) and (max-width: 1080px),
+screen and (-webkit-min-device-pixel-ratio: 2.0) and (max-width: 720px) {
+
+    header {
+        padding: 1.666em 10% 1.111em 10%;
+        overflow: auto;
+    }
+
+    header nav {
+        font-size: 0.888em;
+        line-height: 30px;
+        text-align: center;
+        float: right;
+    }
+
+    header nav ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    header nav li {
+        float: right;
+        display: inline-block;
+        position: relative;
+    }
+
+    header nav a:link, header nav a:visited {
+        color: #767676;
+        display: inline-block;
+        height: 30px;
+        padding: 5px 1.5em;
+        text-decoration: none;
+    }
+
+    header a:link, header a:visited {
+        color: #767676;
+        padding: 2% 10%;
+    }
+
+    .sitename h1 a {
+        font-size: 2em;
+    }
+
+    .sitesubtitle {
+        font-size: 0.888em;
+        padding: 1.333em 1%;
+    }
+
+    article {
+        padding: 1.555em 3%;
+    }
+
+    #content p{
+        font-family: 'Actor', sans-serif;
+        margin: 1.25em 4%;
+        text-align: justify;
+    }
+
+    #content h2 {
+        font-size: 1.444em;
+        margin: 1.25em 4%;
+    }
+
+    #content h3 {
+        font-size: 1.333em;
+        margin: 1.25em 4%;
+    }
+
+    #content h4 {
+        font-size: 1.111em;
+        margin: 1.25em 4%;
+    }
+
+    /* footer style*/
+    .bottom {
+        font-size: 0.888em;
+        padding: 4em 3%;
+        text-align: center;
+    }
+
+}

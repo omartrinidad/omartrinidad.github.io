@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trino swap file - data-science</title><link href="/" rel="alternate"></link><link href="/feeds/data-science.atom.xml" rel="self"></link><id>/</id><updated>2019-01-15T00:00:00+01:00</updated><entry><title>About fitting distributions to data</title><link href="/mixture.html" rel="alternate"></link><published>2019-01-15T00:00:00+01:00</published><updated>2019-01-15T00:00:00+01:00</updated><author><name>Omar Gutiérrez</name></author><id>tag:None,2019-01-15:/mixture.html</id><summary type="html">&lt;p&gt;I explore some ideas about fitting a distribution to specific data.&lt;/p&gt;</summary><content type="html">&lt;p&gt;The distributions in Data Science is &lt;/p&gt;
+&lt;h2&gt;k-Means&lt;/h2&gt;
+&lt;h2&gt;Gaussian mixture models&lt;/h2&gt;
+&lt;p&gt;$$Y_1 \sim \mathcal{N}(\mu_1,\,\sigma^{2}_1)\,. $$&lt;/p&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;p&gt;$$Y_1 \sim \mathcal{N}(\mu_1,\,\sigma^{2}_1)\,. $$&lt;/p&gt;
+&lt;h2&gt;Kernel Density Estimation&lt;/h2&gt;</content></entry></feed>

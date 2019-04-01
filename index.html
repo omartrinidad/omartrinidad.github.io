@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Omar swap file</title>
+    <meta charset="utf-8" />
+    <meta content="True" name="HandheldFriendly">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="./theme/main.css" type="text/css"-->
+
+    <style>
+
+        #dimScreen {
+            position: fixed;
+            padding: 0;
+            margin: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: table;
+        }
+
+        #dimScreen #e {
+            position: absolute;
+            left: 15%;
+            right: 15%;
+            top: 25%;
+            width: 70%;
+            height: 50%;
+            background: #eee;
+            opacity: 0.9;
+        }
+
+        #dimScreen #e #menu ul {
+            list-style-type: none;
+            margin: 2%;
+            padding: 2%;
+            overflow: hidden;
+        }
+
+        #dimScreen #e #menu ul li {
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+
+        #dimScreen #e #menu ul li a {
+            display: block;
+        }
+
+        #dimScreen #e #quote {
+            padding: 1em 2.33em;
+            font-family: 'Marck Script', cursive;
+            font-size: 2.666em;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        path {
+            stroke: #fff;
+        }
+
+        path:first-child {
+            fill: white !important;
+             }
+
+        * { margin: 0; padding: 0; }
+
+        circle {
+            fill: #000;
+            pointer-events: none;
+        }
+
+        .q0-9 { fill: rgb(241,141,5); }
+        .q1-9 { fill: rgb(229,64,40); }
+        .q2-9 { fill: rgb(215,0,96); }
+        .q3-9 { fill: rgb(50,116,44); }
+        .q4-9 { fill: rgb(208,209,2); }
+        .q5-9 { fill: rgb(97,174,36); }
+        .q6-9 { fill: rgb(0,161,203); }
+        .q7-9 { fill: rgb(1,164,164); }
+        .q8-9 { fill: rgb(17,63,140); }
+
+        @media screen and (max-width:680px) {
+
+            #dimScreen {
+                position: fixed;
+                padding: 0;
+                margin: 0;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: table;
+            }
+
+            #dimScreen #e {
+                position: absolute;
+                left: 15%;
+                right: 15%;
+                top: 25%;
+                width: 70%;
+                height: 50%;
+                background: #eee;
+                opacity: 0.9;
+            }
+
+            #dimScreen #e #menu ul {
+                list-style-type: none;
+                margin: 2%;
+                padding: 2%;
+                overflow: hidden;
+            }
+
+            #dimScreen #e #menu ul li:not(:first-child) {
+                display:none;
+            }
+
+            #dimScreen #e #menu ul li a {
+                float: right;
+                display: inline-block;
+            }
+
+            #dimScreen #e #quote {
+                padding: 1em 2em;
+                font-family: 'Marck Script', cursive;
+                font-size: 1.333em;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            path {
+                stroke: #fff;
+            }
+
+            path:first-child {
+                fill: white !important;
+                 }
+
+            * { margin: 0; padding: 0; }
+
+            circle {
+                fill: #000;
+                pointer-events: none;
+            }
+
+            .q0-9 { fill: rgb(241,141,5); }
+            .q1-9 { fill: rgb(229,64,40); }
+            .q2-9 { fill: rgb(215,0,96); }
+            .q3-9 { fill: rgb(50,116,44); }
+            .q4-9 { fill: rgb(208,209,2); }
+            .q5-9 { fill: rgb(97,174,36); }
+            .q6-9 { fill: rgb(0,161,203); }
+            .q7-9 { fill: rgb(1,164,164); }
+            .q8-9 { fill: rgb(17,63,140); }
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="dimScreen">
+        <div id="e">
+            <div id="menu">
+                <ul>
+                    <li><a href="archives.html">Blog</a></li>
+                    <li><a href="http://github.com/omartrinidad">Projects</a></li>
+                    <!--li><a href="travels">Travels</a></li-->
+                    <li><a href="http://goodreads.com/omartrinidad">Books</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div id="quote">
+                Ich möchte alles haben, was gut, ächt und schön ist!
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="./theme/js/d3/d3.min.js"></script>
+<script>
+var width = window.innerWidth, height = window.innerHeight;
+
+var vertices = d3.range(100).map(function(d) {
+          return [Math.random() * width, Math.random() * height];
+          });
+
+var voronoi = d3.geom.voronoi()
+    .clipExtent([[0, 0], [width, height]]);
+
+var svg = d3.select("#dimScreen").append("svg")
+.attr("width", width)
+.attr("height", height)
+.on("mousemove", function() { vertices[0] = d3.mouse(this); redraw(); });
+
+var path = svg.append("g").selectAll("path");
+
+svg.selectAll("circle")
+.data(vertices.slice(1))
+.enter().append("circle")
+.attr("transform", function(d) { return "translate(" + d + ")"; })
+.attr("r", 0.5);
+
+redraw();
+
+function redraw() {
+    path = path .data(voronoi(vertices), polygon);
+    path.exit().remove();
+    path.enter().append("path")
+        .attr("class", function(d, i) { return "q" + (i % 9) + "-9"; })
+        .attr("d", polygon);
+    path.order();
+}
+
+function polygon(d) {
+    return "M" + d.join("L") + "Z";
+}
+</script>
