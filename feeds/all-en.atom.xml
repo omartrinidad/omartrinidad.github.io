@@ -62,7 +62,23 @@ that I will master &lt;em&gt;nach und nach&lt;/em&gt; to improve my skills in th
 &lt;td&gt;&lt;strong&gt;Desde siempre...&lt;/strong&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</content></entry><entry><title>The Parrot's Theorem</title><link href="/sidney.html" rel="alternate"></link><published>2019-04-01T00:00:00+02:00</published><updated>2019-04-01T00:00:00+02:00</updated><author><name>Omar Gutiérrez</name></author><id>tag:None,2019-04-01:/sidney.html</id><summary type="html">&lt;p&gt;Review and summary of The Parrot's Theorem by Denis Guedj (still incomplete)&lt;/p&gt;</summary><content type="html">&lt;!--
+&lt;/table&gt;</content></entry><entry><title>Spark and Scala notes</title><link href="/spark-and-scala.html" rel="alternate"></link><published>2019-04-01T00:00:01+02:00</published><updated>2019-04-01T00:00:01+02:00</updated><author><name>Omar Gutiérrez</name></author><id>tag:None,2019-04-01:/spark-and-scala.html</id><summary type="html">&lt;p&gt;Some notes about Scala and Spark&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Spark&lt;/h1&gt;
+&lt;p&gt;Spark has transformation functions.&lt;/p&gt;
+&lt;h2&gt;Facts to take into account&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;CombineByKey&lt;/code&gt; is preferred over &lt;code&gt;GroupByKey&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Dealing with &lt;code&gt;Spark&lt;/code&gt; and &lt;code&gt;Hadoop&lt;/code&gt; require us to have a in mind that we are
+  working in a distrubuted setting.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;-byKey&lt;/code&gt; methods operate on &lt;code&gt;PairwiseRDD&lt;/code&gt;s.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Scala&lt;/h1&gt;
+&lt;h2&gt;&lt;code&gt;apply&lt;/code&gt; functions&lt;/h2&gt;
+&lt;p&gt;I liked this one, to get the element &lt;code&gt;i&lt;/code&gt; from a &lt;code&gt;Seq&lt;/code&gt; object, we write this: &lt;code&gt;seq apply i&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;More concepts that I need to learn&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;yield&lt;/code&gt; instruction.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;apply&lt;/code&gt; functions.&lt;/li&gt;
+&lt;/ul&gt;</content></entry><entry><title>The Parrot's Theorem</title><link href="/sidney.html" rel="alternate"></link><published>2019-04-01T00:00:00+02:00</published><updated>2019-04-01T00:00:00+02:00</updated><author><name>Omar Gutiérrez</name></author><id>tag:None,2019-04-01:/sidney.html</id><summary type="html">&lt;p&gt;Review and summary of The Parrot's Theorem by Denis Guedj (still incomplete)&lt;/p&gt;</summary><content type="html">&lt;!--
 Guedj wrote a joyful novel about the history of Maths, that is, a good
 introduction to Maths.
 
@@ -80,7 +96,7 @@ Mr. Ruche and Albert along with the kids go to the Louvre Museum, specifically,
 to the Glass Pyramid.
 --&gt;
 
-&lt;p&gt;I am update this post from time to time.&lt;/p&gt;
+&lt;p&gt;I am updating this post from time to time.&lt;/p&gt;
 &lt;h2&gt;Chapter 4. The Rainforest Library.&lt;/h2&gt;
 &lt;p&gt;Mr. Ruche receives the crate of books that Grosrouvre sent him. The collection
 is called the Rainforest Library!&lt;/p&gt;

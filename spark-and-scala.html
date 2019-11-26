@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Spark and Scala notes</title>
+        <meta charset="utf-8" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Trino swap file Full Atom Feed" />
+        <link href="/feeds/notes.atom.xml" type="application/atom+xml" rel="alternate" title="Trino swap file Categories Atom Feed" />
+
+        <meta charset="utf-8" />
+        <meta content="True" name="HandheldFriendly">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="./theme/css/main.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" type="text/css">
+</head>
+
+<body>
+    <!-- implement some navigator -->
+    <div id="dimScreen"></div>
+    <!-- Improve this!!! -->
+    <div></div>
+    <div class="clearfix"></div>
+
+
+    <!-- apply tags: header article-->
+
+    <!-- Bootstrap side bar -->
+    <!-- http://jsfiddle.net/panchroma/rWYQu/ -->
+    <!-- http://www.codingeverything.com/2014/02/BootstrapDocsSideBar.html -->
+
+    <article>
+    <div class="entry-title">
+        <h1>
+            <a href="/spark-and-scala.html" rel="bookmark" title="Permalink to Spark and Scala notes">Spark and Scala notes</a>
+        </h1>
+        <div id="date">            <a href="/author/omar-gutierrez/">Omar Gutiérrez</a>
+        </div>
+        <div id="date">
+            Mo 01 April 2019
+        </div>
+        <div class="tags">
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="content">
+        <h1>Spark</h1>
+<p>Spark has transformation functions.</p>
+<h2>Facts to take into account</h2>
+<ul>
+<li><code>CombineByKey</code> is preferred over <code>GroupByKey</code>.</li>
+<li>Dealing with <code>Spark</code> and <code>Hadoop</code> require us to have a in mind that we are
+  working in a distrubuted setting.</li>
+<li>The <code>-byKey</code> methods operate on <code>PairwiseRDD</code>s.</li>
+</ul>
+<h1>Scala</h1>
+<h2><code>apply</code> functions</h2>
+<p>I liked this one, to get the element <code>i</code> from a <code>Seq</code> object, we write this: <code>seq apply i</code>.</p>
+<h2>More concepts that I need to learn</h2>
+<ul>
+<li>The <code>yield</code> instruction.</li>
+<li>The <code>apply</code> functions.</li>
+</ul>
+        </div>
+        <!--div class="">
+            Here, add ToC, write Python code!
+        </div-->
+    </div>
+
+    <!--END article -->
+    </article>
+
+
+
+    <footer class="bottom">
+        <address id="about" class="vcard body">
+        This blog was made in a hurry by Omar!
+        </address><!-- /#about -->
+    </footer><!-- /#contentinfo -->
+
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+  tocbot.init({
+  // Where to render the table of contents.
+  tocSelector: '.js-toc',
+  // Where to grab the headings to build the table of contents.
+  contentSelector: '.js-toc-content',
+  // Which headings to grab inside of the contentSelector element.
+  headingSelector: 'h1, h2, h3',
+});
+</script>
+
+
+<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {
+                    color: "black ! important"
+                }
+            }
+        },
+        tex2jax: {
+            inlineMath: [['$','$'], ['\\\\(','\\\\)']],
+            processEscapes: true
+        }
+    });
+</script>

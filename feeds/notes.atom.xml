@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trino swap file - notes</title><link href="/" rel="alternate"></link><link href="/feeds/notes.atom.xml" rel="self"></link><id>/</id><updated>2019-04-01T00:00:01+02:00</updated><entry><title>Spark and Scala notes</title><link href="/spark-and-scala.html" rel="alternate"></link><published>2019-04-01T00:00:01+02:00</published><updated>2019-04-01T00:00:01+02:00</updated><author><name>Omar Gutiérrez</name></author><id>tag:None,2019-04-01:/spark-and-scala.html</id><summary type="html">&lt;p&gt;Some notes about Scala and Spark&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Spark&lt;/h1&gt;
+&lt;p&gt;Spark has transformation functions.&lt;/p&gt;
+&lt;h2&gt;Facts to take into account&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;CombineByKey&lt;/code&gt; is preferred over &lt;code&gt;GroupByKey&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Dealing with &lt;code&gt;Spark&lt;/code&gt; and &lt;code&gt;Hadoop&lt;/code&gt; require us to have a in mind that we are
+  working in a distrubuted setting.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;-byKey&lt;/code&gt; methods operate on &lt;code&gt;PairwiseRDD&lt;/code&gt;s.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Scala&lt;/h1&gt;
+&lt;h2&gt;&lt;code&gt;apply&lt;/code&gt; functions&lt;/h2&gt;
+&lt;p&gt;I liked this one, to get the element &lt;code&gt;i&lt;/code&gt; from a &lt;code&gt;Seq&lt;/code&gt; object, we write this: &lt;code&gt;seq apply i&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;More concepts that I need to learn&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;yield&lt;/code&gt; instruction.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;apply&lt;/code&gt; functions.&lt;/li&gt;
+&lt;/ul&gt;</content></entry></feed>
