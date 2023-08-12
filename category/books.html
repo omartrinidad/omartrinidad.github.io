@@ -12,6 +12,8 @@
 
     <style>
 
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
         #dimScreen {
             position: fixed;
             padding: 0;
@@ -34,29 +36,35 @@
             opacity: 0.9;
         }
 
-        #dimScreen #e #menu ul {
+        .menu {
             list-style-type: none;
-            margin: 2%;
-            padding: 2%;
-            overflow: hidden;
-        }
-
-        #dimScreen #e #menu ul li {
-            float: left;
-            width: 20%;
+            width: 100%;
             text-align: center;
         }
 
-        #dimScreen #e #menu ul li a {
-            display: block;
+        .menu li {
+            display: inline-block;
+		}
+
+        .menu li a {
+			text-decoration: none;
+		}
+
+        .menu li:not(:last-child) {
+            padding: 10% 3em 0 0;
         }
+
+		.center {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding: 10px;
+		}
 
         #dimScreen #e #quote {
             padding: 1em 2.33em;
-            font-family: 'Marck Script', cursive;
-            font-size: 2.666em;
-            display: table-cell;
-            vertical-align: middle;
+            font-size: 1.666em;
             text-align: center;
         }
 
@@ -126,8 +134,8 @@
             }
 
             #dimScreen #e #quote {
+				font-family: 'Roboto', sans-serif;
                 padding: 1em 2em;
-                font-family: 'Marck Script', cursive;
                 font-size: 1.333em;
                 display: table-cell;
                 vertical-align: middle;
@@ -167,17 +175,16 @@
 <body>
     <div id="dimScreen">
         <div id="e">
-            <div id="menu">
-                <ul>
-                    <li><a href="archives.html">Blog</a></li>
-                    <li><a href="http://github.com/omartrinidad">Projects</a></li>
-                    <!--li><a href="travels">Travels</a></li-->
-                    <li><a href="http://goodreads.com/omartrinidad">Books</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </div>
-            <div id="quote">
-                Ich möchte alles haben, was gut, ächt und schön ist!
+			<ul class="menu">
+				<li><a href="archives.html">blog</a></li>
+				<li><a href="http://github.com/omartrinidad">projects</a></li>
+				<li><a href="http://goodreads.com/omartrinidad">books</a></li>
+				<!--li><a href="travels">Travels</a></li-->
+				<li><a href="about.html">about</a></li>
+			</ul>
+            <div id="quote" class="center">
+				Like gradient descent... <br />
+				one step at a time.
             </div>
         </div>
     </div>

@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trino swap file</title><link href="/" rel="alternate"></link><link href="/feeds/all-en.atom.xml" rel="self"></link><id>/</id><updated>2019-04-01T00:00:01+02:00</updated><entry><title>German phrases</title><link href="/deutsch-phrases.html" rel="alternate"></link><published>2019-04-01T00:00:01+02:00</published><updated>2019-04-01T00:00:01+02:00</updated><author><name>Omar Gutiérrez</name></author><id>tag:None,2019-04-01:/deutsch-phrases.html</id><summary type="html">&lt;p&gt;Some notes to help me to learn German.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I will compile, &lt;strong&gt;nach und nach&lt;/strong&gt;, useful (and not so useful) phrases in German
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trino swap file</title><link href="/" rel="alternate"></link><link href="/feeds/all-en.atom.xml" rel="self"></link><id>/</id><updated>2020-02-09T17:18:09+01:00</updated><entry><title>Log of dreams</title><link href="/log-of-dreams.html" rel="alternate"></link><published>2020-02-09T17:18:09+01:00</published><updated>2020-02-09T17:18:09+01:00</updated><author><name>Omar Gutiérrez</name></author><id>tag:None,2020-02-09:/log-of-dreams.html</id><summary type="html">&lt;p&gt;I want to register the dreams I remember when I wake up.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;The green bike&lt;/h1&gt;
+&lt;h2&gt;Saturday, February 8, 2020&lt;/h2&gt;
+&lt;p&gt;I went to play basketball to the park of Macultepec, meanwhile, I was going
+there, I was thinking that maybe I should watch some basketball videos on
+Youtube to learn to play better. &lt;/p&gt;
+&lt;p&gt;When I was already playing, I threw the ball to some bikes parked in the
+corner, accidentally I hit one green color bike, which felt to the ground;
+some guys came to see what's going on, among them, a girl, who was precisely
+the owner of the green bike... I told her that I was interested in MTB, she
+told me that they knew some routes, but not precisely MTB routes... &lt;/p&gt;
+&lt;p&gt;She asked me about my phone number to stay in contact and go to some rides
+together, I think the other guys were her brothers... I was trying to remember
+my phone number from Germany, to impress her, but I couldn't, then I woke up.&lt;/p&gt;
+&lt;p&gt;So, I will buy a basket ball today.&lt;/p&gt;</content><category term="experiments"></category></entry><entry><title>German phrases</title><link href="/deutsch-phrases.html" rel="alternate"></link><published>2019-04-01T00:00:01+02:00</published><updated>2019-04-01T00:00:01+02:00</updated><author><name>Omar Gutiérrez</name></author><id>tag:None,2019-04-01:/deutsch-phrases.html</id><summary type="html">&lt;p&gt;Some notes to help me to learn German.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I will compile, &lt;strong&gt;nach und nach&lt;/strong&gt;, useful (and not so useful) phrases in German
 that I will master &lt;em&gt;nach und nach&lt;/em&gt; to improve my skills in that language.&lt;/p&gt;
 &lt;p&gt;I am also jotting down its equivalents in Spanish:&lt;/p&gt;
 &lt;h2&gt;Daily phrases&lt;/h2&gt;
@@ -62,7 +75,8 @@ that I will master &lt;em&gt;nach und nach&lt;/em&gt; to improve my skills in th
 &lt;td&gt;&lt;strong&gt;Desde siempre...&lt;/strong&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</content></entry><entry><title>Spark and Scala notes</title><link href="/spark-and-scala.html" rel="alternate"></link><published>2019-04-01T00:00:01+02:00</published><updated>2019-04-01T00:00:01+02:00</updated><author><name>Omar Gutiérrez</name></author><id>tag:None,2019-04-01:/spark-and-scala.html</id><summary type="html">&lt;p&gt;Some notes about Scala and Spark&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Spark&lt;/h1&gt;
+&lt;/table&gt;</content><category term="deutsch"></category></entry><entry><title>Spark and Scala notes</title><link href="/spark-and-scala.html" rel="alternate"></link><published>2019-04-01T00:00:01+02:00</published><updated>2019-04-01T00:00:01+02:00</updated><author><name>Omar Gutiérrez</name></author><id>tag:None,2019-04-01:/spark-and-scala.html</id><summary type="html">&lt;p&gt;Some notes about Scala and Spark&lt;/p&gt;</summary><content type="html">&lt;p&gt;These notes are merely random tricks that I learn in my journey with Scala.&lt;/p&gt;
+&lt;h1&gt;Spark&lt;/h1&gt;
 &lt;p&gt;Spark has transformation functions.&lt;/p&gt;
 &lt;h2&gt;Facts to take into account&lt;/h2&gt;
 &lt;ul&gt;
@@ -72,13 +86,25 @@ that I will master &lt;em&gt;nach und nach&lt;/em&gt; to improve my skills in th
 &lt;li&gt;The &lt;code&gt;-byKey&lt;/code&gt; methods operate on &lt;code&gt;PairwiseRDD&lt;/code&gt;s.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1&gt;Scala&lt;/h1&gt;
+&lt;h2&gt;&lt;code&gt;Seq&lt;/code&gt; and &lt;code&gt;Vector&lt;/code&gt; vs &lt;code&gt;BufferList&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;To add an element to &lt;code&gt;Seq&lt;/code&gt; I use this: &lt;code&gt;:+&lt;/code&gt;.&lt;/p&gt;
 &lt;h2&gt;&lt;code&gt;apply&lt;/code&gt; functions&lt;/h2&gt;
 &lt;p&gt;I liked this one, to get the element &lt;code&gt;i&lt;/code&gt; from a &lt;code&gt;Seq&lt;/code&gt; object, we write this: &lt;code&gt;seq apply i&lt;/code&gt;.&lt;/p&gt;
+&lt;h1&gt;Scope of variables&lt;/h1&gt;
+&lt;p&gt;Be careful, the variable &lt;code&gt;variable&lt;/code&gt; is out of the scope!&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;true&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="k"&gt;var&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;variable&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;value&amp;quot;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="n"&gt;println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;variable&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;h2&gt;More concepts that I need to learn&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;The &lt;code&gt;yield&lt;/code&gt; instruction.&lt;/li&gt;
 &lt;li&gt;The &lt;code&gt;apply&lt;/code&gt; functions.&lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>The Parrot's Theorem</title><link href="/sidney.html" rel="alternate"></link><published>2019-04-01T00:00:00+02:00</published><updated>2019-04-01T00:00:00+02:00</updated><author><name>Omar Gutiérrez</name></author><id>tag:None,2019-04-01:/sidney.html</id><summary type="html">&lt;p&gt;Review and summary of The Parrot's Theorem by Denis Guedj (still incomplete)&lt;/p&gt;</summary><content type="html">&lt;!--
+&lt;li&gt;Difference between &lt;code&gt;object&lt;/code&gt;, &lt;code&gt;class&lt;/code&gt;, &lt;code&gt;case class&lt;/code&gt;, and &lt;code&gt;trait&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Growable&lt;/code&gt; and &lt;code&gt;Shrinkable&lt;/code&gt; objects.&lt;/li&gt;
+&lt;/ul&gt;</content><category term="notes"></category></entry><entry><title>The Parrot's Theorem</title><link href="/sidney.html" rel="alternate"></link><published>2019-04-01T00:00:00+02:00</published><updated>2019-04-01T00:00:00+02:00</updated><author><name>Omar Gutiérrez</name></author><id>tag:None,2019-04-01:/sidney.html</id><summary type="html">&lt;p&gt;Review and summary of The Parrot's Theorem by Denis Guedj (still incomplete)&lt;/p&gt;</summary><content type="html">&lt;!--
 Guedj wrote a joyful novel about the history of Maths, that is, a good
 introduction to Maths.
 
@@ -167,4 +193,4 @@ profession as a taxi driver, even when he has never been in those cities.&lt;/p&
 &lt;p&gt;The twins together work at the night and proof that there is not a fraction,
 that, squared, could equal two. Perrette and Mr. Ruche are impressed; he
 approves his evolution from acousmaticians to mathematicians.&lt;/p&gt;
-&lt;h2&gt;Chapter 9. Night Boat to Alexandria&lt;/h2&gt;</content></entry></feed>
+&lt;h2&gt;Chapter 9. Night Boat to Alexandria&lt;/h2&gt;</content><category term="books"></category></entry></feed>

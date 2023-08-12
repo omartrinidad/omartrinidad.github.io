@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trino swap file - notes</title><link href="/" rel="alternate"></link><link href="/feeds/notes.atom.xml" rel="self"></link><id>/</id><updated>2019-04-01T00:00:01+02:00</updated><entry><title>Spark and Scala notes</title><link href="/spark-and-scala.html" rel="alternate"></link><published>2019-04-01T00:00:01+02:00</published><updated>2019-04-01T00:00:01+02:00</updated><author><name>Omar Gutiérrez</name></author><id>tag:None,2019-04-01:/spark-and-scala.html</id><summary type="html">&lt;p&gt;Some notes about Scala and Spark&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Spark&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trino swap file - notes</title><link href="/" rel="alternate"></link><link href="/feeds/notes.atom.xml" rel="self"></link><id>/</id><updated>2019-04-01T00:00:01+02:00</updated><entry><title>Spark and Scala notes</title><link href="/spark-and-scala.html" rel="alternate"></link><published>2019-04-01T00:00:01+02:00</published><updated>2019-04-01T00:00:01+02:00</updated><author><name>Omar Gutiérrez</name></author><id>tag:None,2019-04-01:/spark-and-scala.html</id><summary type="html">&lt;p&gt;Some notes about Scala and Spark&lt;/p&gt;</summary><content type="html">&lt;p&gt;These notes are merely random tricks that I learn in my journey with Scala.&lt;/p&gt;
+&lt;h1&gt;Spark&lt;/h1&gt;
 &lt;p&gt;Spark has transformation functions.&lt;/p&gt;
 &lt;h2&gt;Facts to take into account&lt;/h2&gt;
 &lt;ul&gt;
@@ -9,10 +10,22 @@
 &lt;li&gt;The &lt;code&gt;-byKey&lt;/code&gt; methods operate on &lt;code&gt;PairwiseRDD&lt;/code&gt;s.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1&gt;Scala&lt;/h1&gt;
+&lt;h2&gt;&lt;code&gt;Seq&lt;/code&gt; and &lt;code&gt;Vector&lt;/code&gt; vs &lt;code&gt;BufferList&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;To add an element to &lt;code&gt;Seq&lt;/code&gt; I use this: &lt;code&gt;:+&lt;/code&gt;.&lt;/p&gt;
 &lt;h2&gt;&lt;code&gt;apply&lt;/code&gt; functions&lt;/h2&gt;
 &lt;p&gt;I liked this one, to get the element &lt;code&gt;i&lt;/code&gt; from a &lt;code&gt;Seq&lt;/code&gt; object, we write this: &lt;code&gt;seq apply i&lt;/code&gt;.&lt;/p&gt;
+&lt;h1&gt;Scope of variables&lt;/h1&gt;
+&lt;p&gt;Be careful, the variable &lt;code&gt;variable&lt;/code&gt; is out of the scope!&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;true&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="k"&gt;var&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;variable&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;value&amp;quot;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="n"&gt;println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;variable&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;h2&gt;More concepts that I need to learn&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;The &lt;code&gt;yield&lt;/code&gt; instruction.&lt;/li&gt;
 &lt;li&gt;The &lt;code&gt;apply&lt;/code&gt; functions.&lt;/li&gt;
-&lt;/ul&gt;</content></entry></feed>
+&lt;li&gt;Difference between &lt;code&gt;object&lt;/code&gt;, &lt;code&gt;class&lt;/code&gt;, &lt;code&gt;case class&lt;/code&gt;, and &lt;code&gt;trait&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Growable&lt;/code&gt; and &lt;code&gt;Shrinkable&lt;/code&gt; objects.&lt;/li&gt;
+&lt;/ul&gt;</content><category term="notes"></category></entry></feed>
